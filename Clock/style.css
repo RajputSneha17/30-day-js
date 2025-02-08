@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    border: 6px solid yellow;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Clock Numbers Styling */
+.number {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number1 {
+    transform: translate(-50%, -50%) rotate(30deg) translateY(-200px) rotate(-30deg);
+}
+
+.number2 {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(-200px) rotate(-60deg);
+}
+
+.number3 {
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-200px) rotate(-90deg);
+}
+
+.number4 {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(-200px) rotate(-120deg);
+}
+
+.number5 {
+    transform: translate(-50%, -50%) rotate(150deg) translateY(-200px) rotate(-150deg);
+}
+
+.number6 {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(-200px) rotate(-180deg);
+}
+
+.number7 {
+    transform: translate(-50%, -50%) rotate(210deg) translateY(-200px) rotate(-210deg);
+}
+
+.number8 {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(-200px) rotate(-240deg);
+}
+
+.number9 {
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-200px) rotate(-270deg);
+}
+
+.number10 {
+    transform: translate(-50%, -50%) rotate(300deg) translateY(-200px) rotate(-300deg);
+}
+
+.number11 {
+    transform: translate(-50%, -50%) rotate(330deg) translateY(-200px) rotate(-330deg);
+}
+
+.number12 {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-200px) rotate(0deg);
+}
+
+/* Center Box */
+.centerbox {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Clock Hands */
+.secondhand,
+.minutehand,
+.hourshand {
+    width: 4px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    border-radius: 10px;
+}
+
+.secondhand {
+    height: 190px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.minutehand {
+    height: 160px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.hourshand {
+    height: 110px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+/* Arrows on Hands */
+.cursor {
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    z-index: 1000;
+}
+
+.hourshand>.cursor {
+    top: -20px;
+}
+
+.minutehand>.cursor {
+    top: -18px;
+}
+
+.secondhand>.cursor {
+    top: -16px;
+}

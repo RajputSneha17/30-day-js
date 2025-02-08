@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/drum-app-icon.webp">
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-sound="assets/sound1.mp3">
+            <div class="line1">A</div>
+            <div class="line2">CLAP</div>
+        </div>
+        <div class="box" data-sound="assets/sound2.mp3">
+            <div class="line1">S</div>
+            <div class="line2">HIHAT</div>
+        </div>
+        <div class="box" data-sound="assets/sound3.mp3">
+            <div class="line1">D</div>
+            <div class="line2">KICK</div>
+        </div>
+        <div class="box" data-sound="assets/sound4.mp3">
+            <div class="line1">F</div>
+            <div class="line2">OPENHAT</div>
+        </div>
+        <div class="box" data-sound="assets/sound5.mp3">
+            <div class="line1">G</div>
+            <div class="line2">BOOM</div>
+        </div>
+        <div class="box" data-sound="assets/sound6.mp3">
+            <div class="line1">H</div>
+            <div class="line2">RIDE</div>
+        </div>
+        <div class="box" data-sound="assets/sound7.mp3">
+            <div class="line1">J</div>
+            <div class="line2">SNARE</div>
+        </div>
+        <audio id="audio-player"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
