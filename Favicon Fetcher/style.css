@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    display: none;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.img.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.inputText {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.sub {
+    padding: 8px 12px;
+    border: none;
+    background: skyblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub:hover {
+    background: deepskyblue;
+}
+
+.container > .nothing {
+    animation: shake 0.5s ease-in-out;
+    position: relative;
+}
+
+@keyframes shake {
+    0% {
+        left: -5px;
+    }
+    25% {
+        left: 0px;
+    }
+    50% {
+        left: 5px;
+    }
+    75% {
+        left: 0px;
+    }
+    100% {
+        left: -5px;
+    }
+}
