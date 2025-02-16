@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    overflow: hidden;
+}
+
+.countdown-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.cdr {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+.timer p {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 10px;
+    border-radius: 8px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
