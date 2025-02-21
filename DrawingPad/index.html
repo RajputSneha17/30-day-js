@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Pad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="shapes">
+                <h3>Shapes</h3>
+                <ul>
+                    <li class="rectangle">
+                        <span class="material-symbols-outlined">crop_square</span>
+                        Rectangle
+                    </li>
+                    <li  class="circle">
+                        <i class="fa-regular fa-circle"></i>
+                        Circle
+                    </li>
+                    <li class="triangle">
+                       <span class="material-symbols-outlined">change_history</span>
+                        Triangle
+                    </li>
+                    <li>
+                        <input type="checkbox" id="fillcolor"> <label for="fillcolor">Fill Color</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="options">
+                <h3>Options</h3>
+                <ul>
+                    <li class="brush">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        Brush
+                    </li>
+                    <li  class="Eraser">
+                        <i class="fa-solid fa-eraser"></i>
+                        Eraser
+                    </li>
+                    <li>
+                        <input type="range" id="rangeInput" min="1" max="10" value="5">
+                    </li>
+                </ul>
+            </div>
+            <div class="colors">
+                <h3>Colors</h3>
+                <ul>
+                    <li><input class="colorInput" type="color" value="#FFFFFF"></li>
+                    <li><input class="colorInput" type="color" value="#000000"></li>
+                    <li><input class="colorInput" type="color" value="#008000"></li>
+                    <li><input class="colorInput" type="color" value="#87CEEB"></li>
+                    <li><input class="colorInput" type="color" value="#FF0000"></li>
+                </ul>
+            </div>
+            <div class="saveAndClear">
+                <button class="clear">Clear Canvas</button>
+                <button class="save">Save As Image</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
