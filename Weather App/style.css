@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    padding: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.inputText {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#weatherIcon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.deg {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.city {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    gap: 40px;
+}
+
+.humiNum, .windNum {
+    font-size: 22px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.humi, .wind {
+    font-size: small;
+    margin-left: 25px;
+}
+
+.bottom-left>p>i, .bottom-right>p>i {
+    font-size: 35px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.fa-sun {
+    color: #FFD700;
+}
+
+.fa-cloud-sun {
+    color: #FFB347;
+}
+
+.fa-moon {
+    color: #C0C0C0;
+}
+
+.fa-cloud-moon {
+    color: #8B8B8B;
+}
+
+.fa-cloud-moon-rain {
+    color: #6E7B8B;
+}
+
+.fa-cloud-rain {
+    color: #5A9BD4;
+}
+
+.fa-cloud-bolt {
+    color: #555555;
+}
+
+.fa-snowflake {
+    color: #B0E0E6;
+}
+
+.fa-smog {
+    color: #A9A9A9;
+}
+
+.fa-wind {
+    color: #87CEEB;
+}
+
+.fa-volcano {
+    color: #D2691E;
+}
+
+.fa-hurricane {
+    color: #708090;
+}
