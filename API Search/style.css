@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #39297b;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 60px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+form button {
+    padding: 0 15px;
+    height: 100%;
+    background-color: #ff3929;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+
+#show-more-btn {
+    background-color: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px auto 50px;
+    display: none;
+    cursor: pointer;
+}
+
+#search-result {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+#search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+    #search-result {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    form {
+        height: 50px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    #search-result {
+        grid-template-columns: 1fr;
+    }
+
+    #search-result img {
+        height: auto;
+    }
+
+    #show-more-btn {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 310px) {
+    form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    form input {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    form button {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #search-result img {
+        height: 180px;
+    }
+}
